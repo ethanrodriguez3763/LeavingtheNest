@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "983026963963",
+    "project_id": "leavingthenest-acb29",
+    "storage_bucket": "leavingthenest-acb29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983026963963:android:1801a20e8cbfeab1f3675e",
+        "android_client_info": {
+          "package_name": "com.rodriguez.leavingthenest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983026963963-h43j88o06jcs21pjme36emmostb76udh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rodriguez.leavingthenest",
+            "certificate_hash": "b243f8ba9ac8fdd7837fef25d6bc97575c70b298"
+          }
+        },
+        {
+          "client_id": "983026963963-ldjgpv42gqjpfkkfvdvgun52f8sp7h2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyZKA9cdsgTBLvXkFfqic3iH5YLTgP5sQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983026963963-ldjgpv42gqjpfkkfvdvgun52f8sp7h2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
