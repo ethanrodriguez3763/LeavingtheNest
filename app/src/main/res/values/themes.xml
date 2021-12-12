@@ -22,4 +22,5 @@
     <style name="Theme.LeavingtheNest.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.LeavingtheNest.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
