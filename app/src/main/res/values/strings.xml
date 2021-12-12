@@ -9,8 +9,12 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="about_us">About us</string>
+    <string name="about_us_menu">About us</string>
     <string name="navigate">Navigate</string>
     <string name="watch_videos">Watch Videos</string>
     <string name="ask_questions">Ask Questions</string>
+    <string name="mission_text">Leaving The Nest is an app made to ease the difficult transition from life at home to life at college.
+    We hope to help our users during this time in their lives by providing them with helpful information and useful tools to stay on top of things
+    while preparing for this step in their lives.</string>
+    <string name="mission">- Our Mission -</string>
 </resources>

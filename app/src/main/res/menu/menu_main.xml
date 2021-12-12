@@ -10,18 +10,13 @@
         app:showAsAction="always">
     <menu>
     <item
-        android:id="@+id/aboutUs"
-        android:icon="@android:drawable/ic_menu_preferences"
-        android:title="@string/about_us"
-        app:showAsAction="ifRoom" />
-    <item
         android:id="@+id/chatActivity"
-        android:icon="@android:drawable/ic_menu_send"
+        android:icon="@android:drawable/ic_menu_help"
         android:title="@string/ask_questions"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/watchVideos"
-        android:icon="@android:drawable/presence_video_online"
+        android:icon="@android:drawable/ic_media_play"
         android:title="@string/watch_videos"
         app:showAsAction="ifRoom"
         />
