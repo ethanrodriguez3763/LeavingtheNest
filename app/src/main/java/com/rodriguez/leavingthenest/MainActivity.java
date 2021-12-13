@@ -31,14 +31,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
+        Intent intent = null;
         switch(itemId) {
             case R.id.chatActivity:
                 //Launch the Firebase Chat activity
-                Intent intent = new Intent(MainActivity.this, FirebaseChatActivity.class);
+                intent = new Intent(MainActivity.this, FirebaseChatActivity.class);
                 startActivity(intent); //Don't think we will need any information back from this so no need for launcher
                 return true;
             case R.id.watchVideos:
-                //Launch videos activity
+                //Launch Videos Activity
+                intent = new Intent(MainActivity.this, VideoActivity.class);
+                startActivity(intent);
                 return true;
         }
 
