@@ -1,5 +1,9 @@
 package com.rodriguez.leavingthenest;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,15 +19,26 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.List;
 
+public class MainActivity extends AppCompatActivity {
+    ActivityResultLauncher<Intent> launcher;
+    List<Section> sectionList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         ImageView appLogo = findViewById(R.id.logoImage);
         appLogo.setImageResource(R.drawable.applogo);
+
+        launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                    }
+                });
     }
 
     @Override
@@ -49,19 +64,20 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
     //sets up places layout in the recyclerview
     class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
         class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-            TextView text1;
-            TextView text2;
-            String placeID;
+            TextView section;
+            TextView description;
 
             //puts places layout into the recycler view
             public CustomViewHolder(@NonNull View itemView) {
                 super(itemView);
 
-                text1 = itemView.findViewById(R.id.textView6);
-                text2 = itemView.findViewById(R.id.textView7);
+                section = itemView.findViewById(R.id.sectionTextView);
+                description = itemView.findViewById(R.id.descriptionTextView);
 
                 itemView.setOnClickListener(this);
 
@@ -69,15 +85,14 @@ public class MainActivity extends AppCompatActivity {
 
             //updates MainActivity after changes are made
             public void updateView() {
-                text1.setText(place.getName() + " " + "("+ place.getRating()+ "/5 STARS)");
-                text2.setText(place.getAddress());
+                section.setText("Section");
+                description.setText("Description");
             }
 
             //when a place is clicked this will take the user to PlacesDetailActivity
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PlacesDetailActivity.class);
-                intent.putExtra("placeID", this.placeID);
+                Intent intent = new Intent(MainActivity.this, SectionActivity.class);
                 launcher.launch(intent);
             }
 
@@ -94,23 +109,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(MainActivity.this)
-                    .inflate(R.layout.places_layout, parent, false);
+                    .inflate(R.layout.main_menu_layout, parent, false);
             return new CustomViewHolder(view);
         }
 
         @Override
         public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-
-            Place p = placeList.get(position);
-            holder.updateView(p);
+            Section s = sectionList.get(position);
+            holder.updateView(s);
         }
 
         @Override
         public int getItemCount() {
-            if (placeList ==null){
+            if (sectionList ==null){
                 return 0;
             }
-            return placeList.size();
+            return sectionList.size();
         }
     }
 }
