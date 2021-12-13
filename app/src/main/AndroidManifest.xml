@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeavingtheNest">
         <activity
-            android:name=".VideoActivity"
+            android:name=".SectionActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
