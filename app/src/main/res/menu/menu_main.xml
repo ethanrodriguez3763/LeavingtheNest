@@ -26,6 +26,12 @@
             android:title="@string/safety_tips"
             app:showAsAction="ifRoom"
             />
+        <item
+            android:id="@+id/recommendedProducts"
+            android:icon="@drawable/shopppingbag"
+            android:title="@string/recommended_products"
+            app:showAsAction="ifRoom"
+            />
     </menu>
 
     </item>

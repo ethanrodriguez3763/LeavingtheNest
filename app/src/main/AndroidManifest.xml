@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeavingtheNest">
         <activity
+            android:name=".ProductsActivity"
+            android:exported="true" />
+        <activity
             android:name=".SafetyActivity"
             android:exported="true" />
         <activity

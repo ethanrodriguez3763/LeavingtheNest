@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, SafetyActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.recommendedProducts:
+                //Launch safety activity
+                intent = new Intent(MainActivity.this, ProductsActivity.class);
+                startActivity(intent);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
