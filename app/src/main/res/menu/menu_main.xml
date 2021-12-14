@@ -20,6 +20,13 @@
         android:title="@string/watch_videos"
         app:showAsAction="ifRoom"
         />
+        <item
+            android:id="@+id/safetyTips"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/safety_tips"
+            app:showAsAction="ifRoom"
+            />
     </menu>
+
     </item>
 </menu>
