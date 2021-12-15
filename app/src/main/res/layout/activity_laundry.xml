@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaundryActivity">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Prices shown as of December 2021 in USD from Amazon.com"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/tidePodsImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:srcCompat="@drawable/tidepods" />
+
+    <ImageView
+        android:id="@+id/basketImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gainImageView"
+        tools:srcCompat="@drawable/laundrybasket" />
+
+    <ImageView
+        android:id="@+id/downyImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tidePodsImageView"
+        tools:srcCompat="@drawable/downey" />
+
+    <ImageView
+        android:id="@+id/gainImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:srcCompat="@drawable/gain" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Laundry Essntials"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tide Pods ($20.00)"
+        app:layout_constraintEnd_toEndOf="@+id/tidePodsImageView"
+        app:layout_constraintStart_toStartOf="@+id/tidePodsImageView"
+        app:layout_constraintTop_toBottomOf="@+id/tidePodsImageView" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downey Fabric Softner ($12.99)"
+        app:layout_constraintEnd_toEndOf="@+id/downyImageView"
+        app:layout_constraintStart_toStartOf="@+id/downyImageView"
+        app:layout_constraintTop_toBottomOf="@+id/downyImageView" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gain Liquid Detergent ($16.99)"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/gainImageView"
+        app:layout_constraintStart_toStartOf="@+id/gainImageView"
+        app:layout_constraintTop_toBottomOf="@+id/gainImageView" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laundry Basket ($19.30)"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/basketImageView"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="@+id/basketImageView"
+        app:layout_constraintTop_toBottomOf="@+id/basketImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

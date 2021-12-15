@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "192016532696",
+    "project_id": "cpsc-final-project",
+    "storage_bucket": "cpsc-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192016532696:android:4f4f1f7939502a6ac203ad",
+        "android_client_info": {
+          "package_name": "com.rodriguez.leavingthenest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192016532696-1pcu8740rr527e74uspu7odbi5qmbld8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rodriguez.leavingthenest",
+            "certificate_hash": "4c146f1e4cae59143e0896a30676a775334372d5"
+          }
+        },
+        {
+          "client_id": "192016532696-hd6ketl75183jmm0b68dkso64vdnl4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKjUqr1EkarIM4j8Dmnhvk45KM9WbFe24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192016532696-hd6ketl75183jmm0b68dkso64vdnl4u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

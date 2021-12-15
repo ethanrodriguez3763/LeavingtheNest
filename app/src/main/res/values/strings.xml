@@ -19,4 +19,17 @@
     <string name="mission">- Our Mission -</string>
     <string name="safety_tips">Safety Tips</string>
     <string name="recommended_products">Recommended Products</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="delete_list">Delete List</string>
+    <string name="title">Title</string>
+    <string name="importance_choice">importance choice</string>
+    <string name="save">SAVE</string>
+    <string name="description">Description</string>
+    <string name="cancel">CANCEL</string>
+    <string name="press_the_button_in_the_bottom_right_corner_to_add_items_to_your_to_do_list">Press the button in the bottom right corner to add items to your To-Do List!</string>
+    <string-array name="spinner_array">
+        <item>Urgent</item>
+        <item>Important</item>
+        <item>Relaxed</item>
+    </string-array>
 </resources>

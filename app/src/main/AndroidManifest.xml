@@ -21,6 +21,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeavingtheNest">
         <activity
+            android:name=".LaundryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CookingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CleaningActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProductsActivity"
             android:exported="true" />
         <activity

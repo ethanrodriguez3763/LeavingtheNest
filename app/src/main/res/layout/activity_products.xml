@@ -22,7 +22,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Below are products we recommend every college students should have. We organized them into categories below"
+        android:text="Click the images below to find our reccomended products for cleaning, laundry and cooking"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +31,12 @@
 
     <ImageButton
         android:id="@+id/cleaningImageButton"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:scaleType="centerInside"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:contentDescription="cleaning Image Button"
+        android:scaleType="fitXY"
         android:src="@drawable/cleaningclipart"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -50,8 +52,10 @@
 
     <ImageButton
         android:id="@+id/laundryImageButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="laundry Image Button"
+        android:scaleType="fitCenter"
         android:src="@drawable/laundryclipart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,15 +67,16 @@
         android:layout_height="wrap_content"
         android:text="Laundry"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/laundryImageButton"
         app:layout_constraintStart_toStartOf="@+id/laundryImageButton"
         app:layout_constraintTop_toBottomOf="@+id/laundryImageButton" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:scaleType="center"
+        android:id="@+id/cookingImageButton"
+        android:layout_width="274dp"
+        android:layout_height="218dp"
+        android:contentDescription="cooking Image Button"
+        android:scaleType="fitCenter"
         android:src="@drawable/cookingsupplies"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,9 +88,9 @@
         android:layout_height="wrap_content"
         android:text="Cooking"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintEnd_toEndOf="@+id/cookingImageButton"
+        app:layout_constraintStart_toStartOf="@+id/cookingImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/cookingImageButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
