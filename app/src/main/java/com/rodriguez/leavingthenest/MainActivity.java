@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, VideoActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.todoActivity:
+                //Launch ToDoList Activity
+                intent = new Intent(MainActivity.this, ToDoListActivity.class);
+                startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -119,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
             Section s = sectionList.get(position);
-            holder.updateView(s);
+            //holder.updateView(s);
         }
 
         @Override
