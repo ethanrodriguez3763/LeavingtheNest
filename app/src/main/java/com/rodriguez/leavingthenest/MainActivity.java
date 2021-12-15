@@ -18,8 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> launcher;
@@ -61,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.watchVideos:
                 //Launch Videos Activity
                 intent = new Intent(MainActivity.this, VideoActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.safetyTips:
+                //Launch safety activity
+                intent = new Intent(MainActivity.this, SafetyActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.recommendedProducts:
+                //Launch safety activity
+                intent = new Intent(MainActivity.this, ProductsActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.todoActivity:
