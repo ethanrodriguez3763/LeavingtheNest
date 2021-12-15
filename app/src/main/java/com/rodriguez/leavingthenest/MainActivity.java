@@ -23,7 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> launcher;
-    List<Section> sectionList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 //Launch the Firebase Chat activity
                 intent = new Intent(MainActivity.this, FirebaseChatActivity.class);
                 startActivity(intent); //Don't think we will need any information back from this so no need for launcher
-                return true;
-            case R.id.watchVideos:
-                //Launch Videos Activity
-                intent = new Intent(MainActivity.this, VideoActivity.class);
-                startActivity(intent);
                 return true;
             case R.id.safetyTips:
                 //Launch safety activity
@@ -109,8 +104,6 @@ public class MainActivity extends AppCompatActivity {
             //when a place is clicked this will take the user to PlacesDetailActivity
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SectionActivity.class);
-                launcher.launch(intent);
             }
 
             //the use can long lick on a video to delete it
@@ -132,16 +125,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-            Section s = sectionList.get(position);
-            //holder.updateView(s);
+
         }
 
         @Override
         public int getItemCount() {
-            if (sectionList ==null){
-                return 0;
-            }
-            return sectionList.size();
+            return 0;
         }
     }
 }

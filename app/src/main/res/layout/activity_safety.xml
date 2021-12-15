@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".SafetyActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.LeavingtheNest.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/safetyToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.LeavingtheNest.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <TextView
         android:id="@+id/safetyTextView2"
         android:layout_width="0dp"
@@ -193,6 +208,7 @@
         android:id="@+id/safetyTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Safety Tips"
         android:textAlignment="center"
         android:textColor="#FFEB3B"
