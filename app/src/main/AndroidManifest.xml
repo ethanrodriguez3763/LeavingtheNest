@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeavingtheNest">
         <activity
+            android:name=".ToDoItemDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToDoListActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LeavingtheNest.NoActionBar" />
+        <activity
+            android:name=".SectionActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,8 +32,10 @@
             android:name=".FirebaseChatActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.LeavingtheNest.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.LeavingtheNest.NoActionBar"></activity>
+        <activity
+            android:name=".VideoActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

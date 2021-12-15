@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "983026963963",
-    "project_id": "leavingthenest-acb29",
-    "storage_bucket": "leavingthenest-acb29.appspot.com"
+    "project_number": "192016532696",
+    "project_id": "cpsc-final-project",
+    "storage_bucket": "cpsc-final-project.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:983026963963:android:1801a20e8cbfeab1f3675e",
+        "mobilesdk_app_id": "1:192016532696:android:4f4f1f7939502a6ac203ad",
         "android_client_info": {
           "package_name": "com.rodriguez.leavingthenest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "983026963963-h43j88o06jcs21pjme36emmostb76udh.apps.googleusercontent.com",
+          "client_id": "192016532696-1pcu8740rr527e74uspu7odbi5qmbld8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.rodriguez.leavingthenest",
-            "certificate_hash": "b243f8ba9ac8fdd7837fef25d6bc97575c70b298"
+            "certificate_hash": "4c146f1e4cae59143e0896a30676a775334372d5"
           }
         },
         {
-          "client_id": "983026963963-ldjgpv42gqjpfkkfvdvgun52f8sp7h2g.apps.googleusercontent.com",
+          "client_id": "192016532696-hd6ketl75183jmm0b68dkso64vdnl4u0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAyZKA9cdsgTBLvXkFfqic3iH5YLTgP5sQ"
+          "current_key": "AIzaSyAKjUqr1EkarIM4j8Dmnhvk45KM9WbFe24"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "983026963963-ldjgpv42gqjpfkkfvdvgun52f8sp7h2g.apps.googleusercontent.com",
+              "client_id": "192016532696-hd6ketl75183jmm0b68dkso64vdnl4u0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
