@@ -23,7 +23,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> launcher;
+
     List<Section> sectionList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +60,14 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, FirebaseChatActivity.class);
                 startActivity(intent); //Don't think we will need any information back from this so no need for launcher
                 return true;
-            case R.id.watchVideos:
-                //Launch Videos Activity
-                intent = new Intent(MainActivity.this, VideoActivity.class);
+            case R.id.safetyTips:
+                //Launch safety activity
+                intent = new Intent(MainActivity.this, SafetyActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.recommendedProducts:
+                //Launch safety activity
+                intent = new Intent(MainActivity.this, ProductsActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.todoActivity:
