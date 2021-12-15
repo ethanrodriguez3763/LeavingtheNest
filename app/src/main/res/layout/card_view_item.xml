@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:background="#96A6B5"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/singleCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toDoItemTitle"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            card_view:layout_constraintBottom_toTopOf="@+id/toDoItemDescription"
+            card_view:layout_constraintEnd_toStartOf="@id/toDoItemDelete"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/toDoItemDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="@+id/toDoItemTitle"
+            card_view:layout_constraintStart_toStartOf="@+id/toDoItemTitle"
+            card_view:layout_constraintTop_toBottomOf="@+id/toDoItemTitle" />
+
+        <ImageButton
+            android:id="@+id/toDoItemDelete"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/toDoItemTitle"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

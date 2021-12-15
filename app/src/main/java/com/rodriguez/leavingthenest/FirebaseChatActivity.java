@@ -82,10 +82,9 @@ public class FirebaseChatActivity extends AppCompatActivity {
                 });
 
         //Set up a back button
-        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setTitle(getString(R.string.app_name));
-        mToolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24);
-        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        toolbar.setTitle(getString(R.string.app_name));
+        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
@@ -196,8 +195,8 @@ public class FirebaseChatActivity extends AppCompatActivity {
                             .setIsSmartLockEnabled(false)
                             .setAvailableProviders(
                                     Arrays.asList(
-                                            new AuthUI.IdpConfig.EmailBuilder().build(),
-                                            new AuthUI.IdpConfig.GoogleBuilder().build()
+                                            new AuthUI.IdpConfig.GoogleBuilder().build(),
+                                            new AuthUI.IdpConfig.EmailBuilder().build()
                                     )
                             ).build();
                     launcher.launch(intent);
