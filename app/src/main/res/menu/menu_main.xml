@@ -21,23 +21,17 @@
         app:showAsAction="ifRoom"
         />
     <item
-        android:id="@+id/watchVideos"
-        android:icon="@android:drawable/ic_media_play"
-        android:title="@string/watch_videos"
+        android:id="@+id/safetyTips"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="@string/safety_tips"
         app:showAsAction="ifRoom"
-        />
-        <item
-            android:id="@+id/safetyTips"
-            android:icon="@android:drawable/ic_dialog_alert"
-            android:title="@string/safety_tips"
-            app:showAsAction="ifRoom"
-            />
-        <item
-            android:id="@+id/recommendedProducts"
-            android:icon="@android:drawable/btn_star"
-            android:title="@string/recommended_products"
-            app:showAsAction="withText"
-            />
+    />
+    <item
+        android:id="@+id/recommendedProducts"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/recommended_products"
+        app:showAsAction="withText"
+    />
     </menu>
 
     </item>
